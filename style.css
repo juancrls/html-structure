@@ -1,35 +1,41 @@
+/* reset da página */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* container principal */
 .mobile-body {
     border: solid 3px red;
     width: 375px;
-    height: 100vh;
+    height: 100vh; /* 100 viewport height -> vai cobrir 100% da tela independente do tamanho (pode ser uma tv 4K ou um celular pequeno) */
 }
 
+/* container do header */
 .mobile-header {
     width: 100%;
     height: 10%;
     border: solid 3px rgb(0, 140, 255);
 }
 
+/* container com elementos do header */
 .green-square {
     width: 100%;
     height: 60%;
     border: solid 3px green;
 }
 
+/* container com a barra de pesquisa do header */
 .orange-square {
     width: 100%;
     height: 25%;
     border: solid 3px orange;
 }
 
+/* container com o conteúdo principal */
 .pink-square {
-    width: 87%;
+    width: 87%; /* tamanho setado para 87% para que não haja um overflow dentro da div */
     height: 70%;
 
     border: solid 3px pink;
